@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Kidney Disease",
+        "img": "https://assets.medpagetoday.net/media/images/85xxx/85308.jpg",
+        "price": "1000tk",
+        "description": "Kidney disease means your kidneys are damaged and can't filter blood the way they should. You are at greater risk for kidney disease if you have diabetes or high blood pressure. If you experience kidney failure, treatments include kidney transplant or dialysis."
+    },
+    {
+        "id": 2,
+        "name": "Chest Pain",
+        "img": "https://assets.medpagetoday.net/media/images/85xxx/85308.jpg",
+        "price": "1500tk",
+        "description": "Kidney disease means your kidneys are damaged and can't filter blood the way they should. You are at greater risk for kidney disease if you have diabetes or high blood pressure. If you experience kidney failure, treatments include kidney transplant or dialysis."
+    },
+    {
+        "id": 3,
+        "name": "Children Checkup",
+        "img": "https://assets.medpagetoday.net/media/images/85xxx/85308.jpg",
+        "price": "800tk",
+        "description": "Kidney disease means your kidneys are damaged and can't filter blood the way they should. You are at greater risk for kidney disease if you have diabetes or high blood pressure. If you experience kidney failure, treatments include kidney transplant or dialysis."
+    }
+]
