@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: process.env.RECAT_APP_apiKey,
-    authDomain: process.env.RECAT_APP_authDomain,
-    projectId: process.env.RECAT_APP_projectId,
-    storageBucket: process.env.RECAT_APP_storageBucket,
-    messagingSenderId: process.env.RECAT_APP_messagingSenderId,
-    appId: process.env.RECAT_APP_appId,
+    apiKey: "AIzaSyCbSD3gDLjY4fd35UNHea0NHRdnHGNvoFk",
+    authDomain: "pure-doctor.firebaseapp.com",
+    projectId: "pure-doctor",
+    storageBucket: "pure-doctor.appspot.com",
+    messagingSenderId: "988424968154",
+    appId: "1:988424968154:web:80f46f65f670582f7512e3"
 };
 
 // Initialize Firebase

@@ -4,7 +4,7 @@ import { Button, Card, Col } from 'react-bootstrap';
 const Service = ({ service }) => {
     const { name, img, price, description } = service;
     return (
-        <Col>
+        <Col lg="4" md="6" xs="12">
             <Card>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
@@ -13,7 +13,7 @@ const Service = ({ service }) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="info" className='text-white w-100'>Proceed Checkout</Button>
                 </Card.Body>
             </Card>
         </Col>
