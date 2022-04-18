@@ -1,0 +1,8 @@
+nav a {
+    color: white !important;
+    transition: 0.3s;
+}
+
+nav a:active {
+    color: gray !important;
+}

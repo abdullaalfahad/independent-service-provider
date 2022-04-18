@@ -10,14 +10,13 @@ import Loading from '../../Loading/Loading';
 const Login = () => {
     const emailRef = useRef('');
     const navigate = useNavigate();
+    let location = useLocation();
     const [
         signInWithEmailAndPassword,
         user,
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-
-    let location = useLocation();
 
     const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(auth);
 
