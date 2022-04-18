@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Kidney Disease",
-        "img": "https://assets.medpagetoday.net/media/images/85xxx/85308.jpg",
+        "img": "https://www.narayanahealth.org/sites/default/files/pillar-page/kidney-diseases-banner-bg.jpg",
         "price": "1000tk",
         "description": "Kidney disease means your kidneys are damaged and can't filter blood the way they should. You are at greater risk for kidney disease if you have diabetes or high blood pressure. If you experience kidney failure, treatments include kidney transplant or dialysis."
     },
@@ -16,7 +16,7 @@
     {
         "id": 3,
         "name": "Children Check Up",
-        "img": "https://assets.medpagetoday.net/media/images/85xxx/85308.jpg",
+        "img": "https://www.pediatricsoffranklin.com/wp-content/uploads/2017/01/check-ups-1.jpg",
         "price": "800tk",
         "description": "Each visit includes a complete physical exam. The doctor will check the child's growth and development in order to find problems. Even if your child is healthy visits are a good time to focus on your child's wellness. Talking about ways to improve care & prevent problems helps keep your child healthy."
     }

@@ -8,7 +8,7 @@ const Service = ({ service }) => {
     return (
         <Col lg="4" md="6" xs="12">
             <Card>
-                <Card.Img variant="top" src={img} />
+                <Card.Img style={{ height: '250px' }} variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <p>Price: {price}</p>
