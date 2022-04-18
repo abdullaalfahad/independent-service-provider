@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Service = ({ service }) => {
     const { name, img, price, description } = service;
+    const navigate = useNavigate();
     return (
         <Col lg="4" md="6" xs="12">
             <Card>
@@ -13,7 +15,7 @@ const Service = ({ service }) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
-                    <Button variant="info" className='text-white w-100'>Proceed Checkout</Button>
+                    <Button onClick={() => navigate('/checkout')} variant="info" className='text-white w-100'>Proceed Checkout</Button>
                 </Card.Body>
             </Card>
         </Col>
