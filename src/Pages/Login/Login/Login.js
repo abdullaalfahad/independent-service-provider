@@ -3,6 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import SocialShare from '../../Shared/SocialShare/SocialShare';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -37,11 +38,13 @@ const Login = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" name="password" placeholder="Password" required />
                 </Form.Group>
+                <p className='text-danger'>{error?.message}</p>
                 <Button className='fw-bold text-white' variant="info" type="submit">
                     Login
                 </Button>
             </Form>
             <p className='mt-3'>New to Pure Doctor? <Link to="/register">Register here</Link></p>
+            <SocialShare></SocialShare>
         </div>
     );
 };
