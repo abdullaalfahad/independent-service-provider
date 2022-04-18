@@ -43,6 +43,7 @@ const Login = () => {
         toast('Sent email');
     }
 
+
     return (
         <div className='w-50 mx-auto my-5'>
             <h1>Please Login</h1>

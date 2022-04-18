@@ -1,8 +1,23 @@
-# Getting Started with Create React App
+# Pure Doctor React Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is uploaded in firebase [Live Link](https://pure-doctor.web.app/).
 
-## Available Scripts
+## Features of this projects
+* There a home pages where have navbar, static banner, services section, contact section and the footer. Header & Footer are the common pages.
+* There a blogs page where have three simple question & answer.
+* There have a About page where you can know about me.
+* There have login page where you can login by email and password also you can use google sign in. also you can reset your password.
+* From login page you navigate to registration pages if you do not have an account. There also have email & password register and the google sign in.
+* A 404 route also set for unknown route.
+
+
+## Used technology
+* React.js
+* React Router
+* Javascript
+* React Bootstrap
+* Bootstrap
+
 
 In the project directory, you can run:
 
