@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialShare from '../../Shared/SocialShare/SocialShare';
@@ -16,10 +16,14 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+    let location = useLocation();
+
     const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(auth);
 
+    let from = location.state?.from?.pathname || "/";
+
     if (user) {
-        navigate('/');
+        navigate(from, { replace: true });
     }
 
     const handleSubmit = event => {
