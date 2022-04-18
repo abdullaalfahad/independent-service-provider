@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { ToastContainer, toast } from 'react-toastify';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
@@ -29,7 +28,6 @@ const Register = () => {
         const email = event.target.email.value;
         const password = event.target.password.value;
         createUserWithEmailAndPassword(email, password);
-        toast('verification email send');
     }
     return (
         <div className='w-50 mx-auto my-5'>
@@ -59,7 +57,6 @@ const Register = () => {
 
             <p className='mt-3'>Already have an account? <Link to="/login">Please login</Link></p>
             <SocialShare></SocialShare>
-            <ToastContainer />
         </div>
 
 
