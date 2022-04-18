@@ -5,6 +5,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import auth from '../../../firebase.init';
 import SocialShare from '../../Shared/SocialShare/SocialShare';
 import { toast, ToastContainer } from 'react-toastify';
+import Loading from '../../Loading/Loading';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -21,6 +22,10 @@ const Login = () => {
     const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(auth);
 
     let from = location.state?.from?.pathname || "/";
+
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
 
     if (user) {
         navigate(from, { replace: true });

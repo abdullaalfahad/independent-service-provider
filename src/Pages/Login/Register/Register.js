@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialShare from '../../Shared/SocialShare/SocialShare';
+import Loading from '../../Loading/Loading';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -16,13 +16,16 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
+    if (loading) {
+        return <Loading></Loading>
+    }
+
     if (user) {
         navigate('/');
     }
 
     const handleSubmit = event => {
         event.preventDefault();
-        const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
         createUserWithEmailAndPassword(email, password);
@@ -54,7 +57,7 @@ const Register = () => {
                 </Button>
             </Form>
 
-            <p className='mt-3'>Already have an account? <Link to="/register">Please login</Link></p>
+            <p className='mt-3'>Already have an account? <Link to="/login">Please login</Link></p>
             <SocialShare></SocialShare>
             <ToastContainer />
         </div>
