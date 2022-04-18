@@ -9,11 +9,13 @@ This project is uploaded in firebase [Live Link](https://pure-doctor.web.app/).
 * There have login page where you can login by email and password also you can use google sign in. also you can reset your password.
 * From login page you navigate to registration pages if you do not have an account. There also have email & password register and the google sign in.
 * A 404 route also set for unknown route.
+* In this project, I used firebase for authentication and hosting
 
 
 ## Used technology
 * React.js
 * React Router
+* Firebase
 * Javascript
 * React Bootstrap
 * Bootstrap
